@@ -1,0 +1,1 @@
+# Esta carpeta contiene una mini serie de scripts base para installar ciertos recursos en al instancia de ec2
