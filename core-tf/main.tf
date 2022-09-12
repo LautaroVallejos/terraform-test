@@ -1,12 +1,12 @@
 provider "aws" {
-  region = "us-east-2"
+  region = var.region
 }
 
 resource "aws_instance" "terra-instance" {
-  ami           = "ami-0cc49e55fac7c246a"
-  instance_type = "t2.micro"
+  ami = var.ami
+  instance_type = var.instance
   tags = {
-    Name        = "Terratest-infra"
+    Name = "terra-instance"
     Environment = "Dev"
   }
 }
